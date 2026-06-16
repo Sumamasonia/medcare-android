@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "665689712302",
+    "firebase_url": "https://medicalmanagementsystem-fa817-default-rtdb.firebaseio.com",
+    "project_id": "medicalmanagementsystem-fa817",
+    "storage_bucket": "medicalmanagementsystem-fa817.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665689712302:android:45cb1cd815722f31052f3f",
+        "android_client_info": {
+          "package_name": "com.example.medicalmanagementsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQjq6azUCRSQpiIgidcI77cmmn4vgk93k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

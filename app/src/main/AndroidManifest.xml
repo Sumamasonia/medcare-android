@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medicalmanagementsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MedicalManagement">
+
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".RegisterActivity"/>
+
+        <!-- Patient Activities -->
+        <activity android:name=".patient.PatientDashboardActivity"/>
+        <activity android:name=".patient.PatientProfileActivity"/>
+        <activity android:name=".patient.BookAppointmentActivity"/>
+        <activity android:name=".patient.BillHistoryActivity"/>
+        <activity android:name=".patient.TreatmentHistoryActivity"/>
+
+        <!-- Doctor Activities -->
+        <activity android:name=".doctor.DoctorDashboardActivity"/>
+        <activity android:name=".doctor.DoctorProfileActivity"/>
+        <activity android:name=".doctor.PendingAppointmentsActivity"/>
+        <activity android:name=".doctor.TodaysAppointmentsActivity"/>
+        <activity android:name=".doctor.HistoryUpdateActivity"/>
+        <activity android:name=".doctor.GenerateBillActivity"/>
+        <activity android:name=".doctor.PatientHistoryActivity"/>
+    </application>
+</manifest>

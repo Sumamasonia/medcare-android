@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Blue Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/primary"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:text="@string/emoji_user_profile"
+                android:textSize="48sp"
+                android:gravity="center"
+                android:background="#33FFFFFF"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_patient_name"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_patient_role"
+                android:textColor="#B3FFFFFF"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- Info Cards -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_personal_info"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_marginBottom="12dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content"
+                        android:text="@string/label_email" android:textStyle="bold" android:textColor="@color/text_gray"/>
+                    <TextView android:id="@+id/tvEmail" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="@string/placeholder_dash"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content"
+                        android:text="@string/label_phone" android:textStyle="bold" android:textColor="@color/text_gray"/>
+                    <TextView android:id="@+id/tvPhone" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="@string/placeholder_dash"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content"
+                        android:text="@string/label_age" android:textStyle="bold" android:textColor="@color/text_gray"/>
+                    <TextView android:id="@+id/tvAge" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="@string/placeholder_dash"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content"
+                        android:text="@string/label_gender" android:textStyle="bold" android:textColor="@color/text_gray"/>
+                    <TextView android:id="@+id/tvGender" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="@string/placeholder_dash"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content"
+                        android:text="@string/label_address" android:textStyle="bold" android:textColor="@color/text_gray"/>
+                    <TextView android:id="@+id/tvAddress" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="@string/placeholder_dash"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>
